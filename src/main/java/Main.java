@@ -1,4 +1,6 @@
 public class Main {
+    public static final int RACE_GOAL = 100;
+
     public static void main(String[] args) throws InterruptedException {
         Counter counter = new Counter();
         ThreadExtends thread1 = new ThreadExtends(counter);

@@ -7,7 +7,7 @@ public class ImplementRunnable implements Runnable {
 
     @Override
     public void run() {
-        while (counter.getCounter() < 100) {
+        while (counter.getCounter() < Main.RACE_GOAL) {
             counter.increment();
             System.out.println(Thread.currentThread().getName() + " : " + counter.getCounter());
         }

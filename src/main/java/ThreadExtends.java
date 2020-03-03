@@ -7,7 +7,7 @@ public class ThreadExtends extends Thread {
 
     @Override
     public void run() {
-        while (counter.getCounter() < 100) {
+        while (counter.getCounter() < Main.RACE_GOAL) {
             counter.increment();
             System.out.println(this.getName() + " : " + counter.getCounter());
         }
